@@ -7,10 +7,10 @@ import java.util.Map;
  * @author harry
  *
  */
-public class CheckUtils {
+public class CheckUtil {
 	private static final int SIZE = 0;
 	
-	private CheckUtils(){}
+	private CheckUtil(){}
 	
 	public static final boolean isNullOrZero(String... input){
 		
