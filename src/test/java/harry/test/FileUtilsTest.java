@@ -7,12 +7,17 @@ import java.util.Map;
 import org.junit.Test;
 
 import harry.utils.FileUtil;
+import harry.utils.MathUtil;
 
 public class FileUtilsTest {
 	
-	/**
-	 * @throws IOException
-	 */
+	@Test
+	public void testIsArithmeticProgression(){
+		int[] arrs = {1,4,7,10};
+		
+		System.out.println(MathUtil.isArithmeticProgression(arrs));
+	}
+	
 	@Test
 	public void test() throws IOException {
 		String fileName = "maven-war-plugin-2.6.jar";
