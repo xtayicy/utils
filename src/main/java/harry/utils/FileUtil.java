@@ -20,6 +20,7 @@ import org.apache.commons.io.IOUtils;
  */
 public final class FileUtil {
 	private static final String BLANK = " ";
+	private static final String EQUALS = "=";
 
 	private FileUtil() {}
 	
@@ -43,13 +44,13 @@ public final class FileUtil {
 		else if (!file.isFile())
 			throw new FileNotFoundException();
 
-		if (CheckUtils.isNullOrZero(map))
+		if (CheckUtil.isNullOrZero(map))
 			throw new IllegalArgumentException();
 		
 		
 		Map<String,String> linkedHashMap = new LinkedHashMap<String,String>();
-		for (String blankResults: getContent(file).split(" ")) {
-			linkedHashMap.put(blankResults.split("=")[0], blankResults.split("=")[1]);
+		for (String blankResults: getContent(file).split(BLANK)) {
+			linkedHashMap.put(blankResults.split(EQUALS)[0], blankResults.split(EQUALS)[1]);
 		}
 		
 		for (Entry<String, String> entry : map.entrySet()) {
@@ -59,7 +60,7 @@ public final class FileUtil {
 		
 		StringBuffer sb = new StringBuffer(prefContent);
 		for (Entry<String,String> entry : linkedHashMap.entrySet()) {
-			sb.append(entry.getKey()).append("=").append(entry.getValue()).append(BLANK);
+			sb.append(entry.getKey()).append(EQUALS).append(entry.getValue()).append(BLANK);
 		}
 		
 		return sb.toString();
@@ -75,7 +76,7 @@ public final class FileUtil {
 		else
 			return;
 
-		if (CheckUtils.isNullOrZero(destDirectories))
+		if (CheckUtil.isNullOrZero(destDirectories))
 			throw new IllegalArgumentException();
 
 		for (String destDir : destDirectories) {
