@@ -1,0 +1,1 @@
+-DgroupId=org.apache.maven.plugin-tools -DartifactId=maven-plugin-annotations -Dversion=3.3 -Dpackaging=jar -Dfile=F:\test\maven-plugin-annotations-3.3.jar -Durl=http://localhost:8081/repository/maven-releases/ -DrepositoryId=user-releases

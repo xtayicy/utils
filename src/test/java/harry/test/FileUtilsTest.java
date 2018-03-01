@@ -20,10 +20,10 @@ public class FileUtilsTest {
 	
 	@Test
 	public void test() throws IOException {
-		String fileName = "maven-war-plugin-2.6.jar";
-		String groupId = "org.apache.maven.plugins";
-		String artifactId = "maven-war-plugin";
-		String version = "2.6";
+		String fileName = "zkclient-0.5.jar";
+		String groupId = "com.github.sgroschupf";
+		String artifactId = "zkclient";
+		String version = "0.5";
 		
 		FileUtil.copy("D:\\download\\" + fileName, 
 				      "F:\\test");
