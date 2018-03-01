@@ -20,18 +20,18 @@ public class FileUtilsTest {
 	
 	@Test
 	public void test() throws IOException {
-		String fileName = "zkclient-0.5.jar";
-		String groupId = "com.github.sgroschupf";
-		String artifactId = "zkclient";
-		String version = "0.5";
+		String fileName = "maven-dependency-plugin-2.10.jar";
+		String groupId = "org.apache.maven.plugins";
+		String artifactId = "maven-dependency-plugin";
+		String version = "2.10";
+		String packaging = "jar";
 		
-		FileUtil.copy("D:\\download\\" + fileName, 
-				      "F:\\test");
 		Map<String,String> hashMap = new HashMap<String,String>();
 		hashMap.put("-DgroupId", groupId);
 		hashMap.put("-DartifactId", artifactId);
 		hashMap.put("-Dversion", version);
-		hashMap.put("-Dfile", "F:\\test\\" + fileName);
+		hashMap.put("-Dfile", "D:\\download\\" + fileName);
+		hashMap.put("-Dpackaging", packaging);
 		String result = FileUtil.getResult("test.txt",hashMap, "mvn deploy:deploy-file ");
 		System.out.println(result);
 	}
