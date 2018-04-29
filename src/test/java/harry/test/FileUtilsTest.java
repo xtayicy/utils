@@ -21,7 +21,7 @@ public class FileUtilsTest {
 	@Test
 	public void test() throws IOException {
 		String fileName = "maven-dependency-plugin-2.10.jar";
-		String groupId = "org.apache.maven.plugins";
+		String groupId = "org.eclipse.aether";
 		String artifactId = "maven-dependency-plugin";
 		String version = "2.10";
 		String packaging = "jar";
