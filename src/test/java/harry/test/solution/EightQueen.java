@@ -29,7 +29,7 @@ public class EightQueen {
 			isFound = true;
 		}else{
 			while(row < 8 && !isFound){
-				if(isSave(row,col,arrs)){
+				if(isSafe(row,col,arrs)){
 					arrs[col] = row;
 					if(!place(arrs,col + 1)){
 						row++;
@@ -43,7 +43,7 @@ public class EightQueen {
 		return isFound;
 	}
 	
-	public boolean isSave(int row,int col,int[] arrs){
+	public boolean isSafe(int row,int col,int[] arrs){
 		for (int i = 0; i < col; i++) {
 			int queenRow = arrs[i];
 			if(row == queenRow){
