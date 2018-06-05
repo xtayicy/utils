@@ -8,6 +8,51 @@ import org.junit.Test;
  *
  */
 public class Solution {
+	/**
+	 * 链表排序
+	 */
+	@Test
+	public void testSort(){
+		/*ListNode s1 = new ListNode(3);
+		ListNode s2 = new ListNode(1);
+		ListNode s3 = new ListNode(5);
+		ListNode s4 = new ListNode(2);
+		ListNode s5 = new ListNode(4);
+		s1.next = s2;
+		s2.next = s3;
+		s3.next = s4;
+		s4.next = s5;
+		System.out.println(sort(s1));*/
+		
+		/*ListNode s = null;
+		System.out.println(sort(s));*/
+		
+		ListNode s = new ListNode(2);
+		System.out.println(sort(s));
+	}
+	
+	public ListNode sort(ListNode s){
+		ListNode head = s;
+		while(s != null){
+			int min = s.val;
+			ListNode s1 = s.next;
+			while(s1 != null){
+				if(min > s1.val){
+					int temp = s1.val;
+					s1.val = min;
+					min = temp;
+				}
+				
+				s1 = s1.next;
+			}
+			
+			s.val = min;
+			s = s.next;
+		}
+		
+		return head;
+	}
+	
 	@Test
 	public void testMergeListNode(){
 		ListNode s1 = new ListNode(1);
