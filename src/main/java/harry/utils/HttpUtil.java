@@ -25,7 +25,7 @@ public final class HttpUtil {
 
 	public static String sendGet(String url, Map<String, String> params) {
 		StringBuffer sb = null;
-		if (!CommonUtil.isEmpty(params)) {
+		if (!CheckUtil.isNullOrZero(params)) {
 			sb = new StringBuffer("?");
 			int flag = 0;
 			for (Map.Entry<String, String> entity : params.entrySet()) {

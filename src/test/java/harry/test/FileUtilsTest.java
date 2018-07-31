@@ -34,10 +34,10 @@ public class FileUtilsTest {
 	
 	@Test
 	public void test() throws IOException {
-		String fileName = "maven-dependency-plugin-2.10.jar";
-		String groupId = "org.eclipse.aether";
-		String artifactId = "maven-dependency-plugin";
-		String version = "2.10";
+		String fileName = "geode-wan-9.1.1.jar";
+		String groupId = "io.pivotal.gemfire";
+		String artifactId = "geode-wan";
+		String version = "9.1.1";
 		String packaging = "jar";
 		
 		Map<String,String> hashMap = new HashMap<String,String>();
@@ -120,5 +120,48 @@ public class FileUtilsTest {
 		
 		br.close();
 		bw.close();
+	}
+	
+	@Test
+	public void clean(){
+		String m2_repository = "D:\\.m2\\repository";
+		
+		//String file = "D:\\.m2\\repository\\org\\springframework\\boot\\spring-boot-test\\2.0.0.RELEASE";
+		listFiles(m2_repository);
+	}
+	
+	public void listFiles(String dir){
+		File m2_repository_file = new File(dir);
+		File[] m2_repository_file_listFiles = m2_repository_file.listFiles();
+		for (File m2_repository_file_listFile : m2_repository_file_listFiles) {
+			if(m2_repository_file_listFile.isDirectory()){
+				listFiles(m2_repository_file_listFile.getAbsolutePath());
+			}else{
+				String fileName = m2_repository_file_listFile.getName();
+				if(fileName.endsWith("-sources.jar")){
+					break;
+				}
+				
+				if(fileName.endsWith(".jar")){
+					String name = fileName.substring(0, fileName.indexOf(".jar"));
+					String sourceFileName = name + "-sources.jar";
+					File parentFile = m2_repository_file_listFile.getParentFile();
+					String[] child_list = parentFile.list();
+					boolean isFound = false;
+					for (String child : child_list) {
+						if(child.equals(sourceFileName)){
+							isFound = true;
+							break;
+						}
+					}
+					
+					if(!isFound){
+						for (File file : parentFile.listFiles()) {
+							file.delete();
+						}
+					}
+				}
+			}
+		}
 	}
 }
