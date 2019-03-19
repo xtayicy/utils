@@ -16,6 +16,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.io.input.ReaderInputStream;
 import org.junit.Test;
 
 import harry.test.constant.Constant;
@@ -30,6 +31,33 @@ public class FileUtilsTest {
 		int[] arrs = {1,4,7,10};
 		
 		System.out.println(MathUtil.isArithmeticProgression(arrs));
+	}
+	
+	@Test
+	public void testRemove() throws FileNotFoundException{
+		File file = new File("F:/sql/demo.sql");
+		
+		try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
+				BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(new File("F:/sql/demo.sql.bak"))));){
+			String line;
+			while((line = reader.readLine()) != null){
+				if(line.contains("ON UPDATE CURRENT_TIMESTAMP")){
+					line = line.replace("ON UPDATE CURRENT_TIMESTAMP", "");
+				}
+				
+				if(line.contains("DEFAULT CURRENT_TIMESTAMP")){
+					line = line.replace("DEFAULT CURRENT_TIMESTAMP", "");
+				}
+				
+				writer.write(line);
+				writer.newLine();
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("end");
 	}
 	
 	@Test

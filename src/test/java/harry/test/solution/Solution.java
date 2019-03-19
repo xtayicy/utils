@@ -9,6 +9,49 @@ import org.junit.Test;
  */
 public class Solution {
 	/**
+	 * 链表反转
+	 */
+	@Test
+	public void testReverse(){
+		ListNode one = new ListNode(1);
+		ListNode two = new ListNode(2);
+		ListNode three = new ListNode(3);
+		
+		one.next = two;
+		two.next = three;
+		
+		print(one);
+		
+		print(reverse(one));
+	}
+	
+	public void print(ListNode node){
+		while(node != null){
+			System.out.println(node.val);
+			node = node.next;
+		}
+	}
+	
+	public static ListNode reverse(ListNode node){
+		ListNode head = new ListNode();
+		ListNode previous = null;
+		
+		while(node != null){
+			ListNode temp = new ListNode(node.val);
+			head.next = temp;
+			
+			if(previous != null){
+				head.next.next = previous;
+			}
+			
+			previous = head.next;
+			node = node.next;
+		}
+		
+		return head.next;
+	}
+	
+	/**
 	 * 链表排序
 	 */
 	@Test
