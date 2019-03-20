@@ -32,7 +32,7 @@ public class Solution {
 		}
 	}
 	
-	public static ListNode reverse(ListNode node){
+	public ListNode reverse(ListNode node){
 		ListNode head = new ListNode();
 		ListNode previous = null;
 		
