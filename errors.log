@@ -1,34 +1,41 @@
-Failure to transfer io.github.lukehutch:fast-classpath-scanner:jar:2.18.1 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact io.github.lukehutch:fast-classpath-scanner:jar:2.18.1 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer it.unimi.dsi:fastutil:jar:8.1.1 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact it.unimi.dsi:fastutil:jar:8.1.1 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer javax.resource:javax.resource-api:jar:1.7 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact javax.resource:javax.resource-api:jar:1.7 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer javax.transaction:javax.transaction-api:jar:1.2 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact javax.transaction:javax.transaction-api:jar:1.2 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer net.java.dev.jna:jna:jar:4.5.1 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact net.java.dev.jna:jna:jar:4.5.1 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer net.sf.jopt-simple:jopt-simple:jar:5.0.4 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact net.sf.jopt-simple:jopt-simple:jar:5.0.4 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.logging.log4j:log4j-core:jar:2.10.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.logging.log4j:log4j-core:jar:2.10.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-cache:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-cache:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-config-core:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-config-core:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-config-ogdl:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-config-ogdl:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-core:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-core:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-crypto-cipher:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-crypto-cipher:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-crypto-core:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-crypto-core:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-crypto-hash:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-crypto-hash:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-event:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-event:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.apache.shiro:shiro-lang:jar:1.4.0 from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.apache.shiro:shiro-lang:jar:1.4.0 from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Failure to transfer org.jgroups:jgroups:jar:3.6.14.Final from http://localhost:8081/repository/maven-public/ was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced. Original error: Could not transfer artifact org.jgroups:jgroups:jar:3.6.14.Final from/to central (http://localhost:8081/repository/maven-public/): The operation was cancelled.
-Missing artifact io.github.lukehutch:fast-classpath-scanner:jar:2.18.1	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact it.unimi.dsi:fastutil:jar:8.1.1	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact javax.resource:javax.resource-api:jar:1.7	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact javax.transaction:javax.transaction-api:jar:1.2	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact net.java.dev.jna:jna:jar:4.5.1	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact net.sf.jopt-simple:jopt-simple:jar:5.0.4	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.logging.log4j:log4j-core:jar:2.10.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-cache:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-config-core:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-config-ogdl:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-core:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-crypto-cipher:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-crypto-core:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-crypto-hash:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-event:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.apache.shiro:shiro-lang:jar:1.4.0	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
-Missing artifact org.jgroups:jgroups:jar:3.6.14.Final	pom.xml	/spring-cloud-0.0.1-SNAPSHOT	line 1	Maven Dependency Problem
+Missing artifact xml-apis:xml-apis:jar:1.0.b2	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.springframework.security:spring-security-core:jar:4.2.0.RELEASE	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.springframework:org.springframework.spring-library:libd:4.3.4.RELEASE	pom.xml	/wxbusiness-service	line 27	Maven Dependency Problem
+Missing artifact org.springframework:org.springframework.spring-library:libd:4.3.4.RELEASE	pom.xml	/wxbusiness-web	line 61	Maven Dependency Problem
+Missing artifact org.slf4j:com.springsource.slf4j.org.apache.commons.logging:jar:1.6.1	pom.xml	/wxbusiness-web	line 234	Maven Dependency Problem
+Missing artifact org.slf4j:com.springsource.slf4j.api:jar:1.6.1	pom.xml	/wxbusiness-web	line 229	Maven Dependency Problem
+Missing artifact org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.0.0.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.jboss.logging:jboss-logging:jar:3.1.3.GA	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.jboss.logging:jboss-logging-annotations:jar:1.2.0.Beta1	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.jboss:jandex:jar:1.1.0.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.javassist:javassist:jar:3.18.1-GA	pom.xml	/wxbusiness-web	line 333	Maven Dependency Problem
+Missing artifact org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.hibernate.common:hibernate-commons-annotations:jar:5.0.1.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.hibernate:hibernate-validator:jar:4.3.1.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.hibernate:hibernate-entitymanager:jar:4.3.1.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.hibernate:hibernate-ehcache:jar:4.3.11.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.hibernate:hibernate-core:jar:4.3.1.Final	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact org.apache.zookeeper:zookeeper:jar:3.3.6	pom.xml	/wxbusiness-web	line 328	Maven Dependency Problem
+Missing artifact org.apache.commons:com.springsource.org.apache.commons.lang:jar:2.4.0	pom.xml	/wxbusiness-service	line 39	Maven Dependency Problem
+Missing artifact org.apache.commons:com.springsource.org.apache.commons.lang:jar:2.4.0	pom.xml	/wxbusiness-web	line 208	Maven Dependency Problem
+Missing artifact org.apache.commons:com.springsource.org.apache.commons.beanutils:jar:1.8.0	pom.xml	/wxbusiness-service	line 44	Maven Dependency Problem
+Missing artifact org.apache.commons:com.springsource.org.apache.commons.beanutils:jar:1.8.0	pom.xml	/wxbusiness-web	line 213	Maven Dependency Problem
+Missing artifact org.apache.ant:ant:jar:1.9.2	pom.xml	/wxbusiness-service	line 1	Maven Dependency Problem
+Missing artifact org.apache.ant:ant:jar:1.9.2	pom.xml	/wxbusiness-web	line 1	Maven Dependency Problem
+Missing artifact net.sourceforge.jexcelapi:jxl:jar:2.6.12	pom.xml	/wxbusiness-service	line 102	Maven Dependency Problem
+Missing artifact net.sourceforge.jexcelapi:jxl:jar:2.6.12	pom.xml	/wxbusiness-web	line 294	Maven Dependency Problem
+Missing artifact log4j:log4j:jar:1.2.14	pom.xml	/wxbusiness-web	line 3	Maven Dependency Problem
+Missing artifact junit:junit:jar:3.8.1	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact javax.websocket:javax.websocket-api:jar:1.1	pom.xml	/wxbusiness-web	line 300	Maven Dependency Problem
+Missing artifact javax.servlet:com.springsource.javax.servlet:jar:2.5.0	pom.xml	/wxbusiness-service	line 49	Maven Dependency Problem
+Missing artifact javax.servlet:com.springsource.javax.servlet:jar:2.5.0	pom.xml	/wxbusiness-web	line 201	Maven Dependency Problem
+Missing artifact dom4j:dom4j:jar:1.6.1	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
+Missing artifact com.supermember:supermember-interface:jar:1.6.0	pom.xml	/wxbusiness-web	line 32	Maven Dependency Problem
+Missing artifact com.mysql.jdbc:com.springsource.com.mysql.jdbc:jar:5.1.6	pom.xml	/wxbusiness-web	line 196	Maven Dependency Problem
+Missing artifact com.ibatis:ibatis2-common:jar:2.1.7.597	pom.xml	/wxbusiness-web	line 338	Maven Dependency Problem
+Missing artifact com.heloo:wxbusiness-plugin:jar:2.5.0-SNAPSHOT	pom.xml	/wxbusiness-web	line 27	Maven Dependency Problem
+Missing artifact com.google.code.gson:gson:jar:2.3.1	pom.xml	/wxbusiness-service	line 107	Maven Dependency Problem
+Missing artifact com.google.code.gson:gson:jar:2.3.1	pom.xml	/wxbusiness-web	line 288	Maven Dependency Problem
+Missing artifact com.alibaba:dubbo:jar:2.5.3	pom.xml	/wxbusiness-web	line 306	Maven Dependency Problem
+Missing artifact c3p0:c3p0:jar:0.9.1.2	pom.xml	/wxbusiness-web	line 1	Maven Dependency Problem
+Missing artifact antlr:antlr:jar:2.7.7	pom.xml	/wxbusiness-entity	line 1	Maven Dependency Problem
