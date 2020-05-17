@@ -16,7 +16,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.commons.io.input.ReaderInputStream;
 import org.junit.Test;
 
 import harry.test.constant.Constant;
@@ -79,6 +78,35 @@ public class FileUtilsTest {
 	}
 	
 	@Test
+	public void testDeleteFile(){
+		String directory = "D:\\.m2\\repository";
+		String fileName = "m2e-lastUpdated.properties";
+		deleteFile(directory, fileName,null);
+	}
+	
+	@Test
+	public void testDeleteEndWithFile(){
+		String directory = "D:\\.m2\\repository";
+		String suffix = ".lastUpdated";
+		deleteFile(directory, null,suffix);
+	}
+	
+	public void deleteFile(String directory,String fileName,String suffix){
+		File[] files = new File(directory).listFiles();
+		for (File file : files) {
+			if(file.isDirectory()){
+				deleteFile(file.getAbsolutePath(),fileName,suffix);
+			}else{
+				if(file.getName().equals(fileName)| file.getName().endsWith(suffix)){
+					file.delete();
+					System.out.println(file.getAbsolutePath() + " has been deleted!");
+					
+				}
+			}
+		}
+	}
+	
+	@Test
 	public void delete() throws IOException{
 		String fileName = "errors.txt";
 		String destFileName = "errors.log";
@@ -97,32 +125,31 @@ public class FileUtilsTest {
 			File[] listFiles = new File(sb.toString()).listFiles();
 			for (File file : listFiles) {
 				file.delete();
+				System.out.println(file.getAbsolutePath() + " has been deleted.");
 			}
 		}
 	}
 	
 	public Set<Jar> getJars(String fileName) throws IOException{
 		Set<Jar> jars = new HashSet<Jar>();
-		
-		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(fileName))));
-		String line;
-		while((line = br.readLine()) != null){
-			String[] arrs = null;
-			
-			if(line.startsWith(Constant.FAILURE_STR)){
-				int beginIndex = line.indexOf(Constant.TRANSFER_STR);
-				int endIndex = line.indexOf(Constant.FROM_STR);
-				arrs = line.substring(beginIndex + Constant.TRANSFER_STR.length() + 1,endIndex).trim().split(":");
-			}else if(line.startsWith(Constant.MISSING_STR)){
-				int beginIndex = line.indexOf(Constant.ARTIFACT_STR);
-				int endIndex = line.indexOf(Constant.POM_XML_STR);
-				arrs = line.substring(beginIndex + Constant.ARTIFACT_STR.length() + 1,endIndex).trim().split(":");
+		try(BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(fileName))));){
+			String line;
+			while((line = br.readLine()) != null){
+				String[] arrs = null;
+				
+				if(line.startsWith(Constant.FAILURE_STR)){
+					int beginIndex = line.indexOf(Constant.TRANSFER_STR);
+					int endIndex = line.indexOf(Constant.FROM_STR);
+					arrs = line.substring(beginIndex + Constant.TRANSFER_STR.length() + 1,endIndex).trim().split(":");
+				}else if(line.startsWith(Constant.MISSING_STR)){
+					int beginIndex = line.indexOf(Constant.ARTIFACT_STR);
+					int endIndex = line.indexOf(Constant.POM_XML_STR);
+					arrs = line.substring(beginIndex + Constant.ARTIFACT_STR.length() + 1,endIndex).trim().split(":");
+				}
+				
+				jars.add(new Jar(arrs[0], arrs[1], arrs[3]));
 			}
-			
-			jars.add(new Jar(arrs[0], arrs[1], arrs[3]));
 		}
-		
-		br.close();
 		
 		return jars;
 	}
