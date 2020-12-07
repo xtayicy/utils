@@ -13,6 +13,8 @@
 		<maven.resources.plugin.version>2.6</maven.resources.plugin.version>
 		<maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
 		<maven.surefire.plugin.version>2.6</maven.surefire.plugin.version>
+		<org.mybatis.version>3.4.4</org.mybatis.version>
+		<org.acegisecurity.version>1.0.7</org.acegisecurity.version>
 	</properties>
 
 	<dependencies>
@@ -33,6 +35,18 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${org.mybatis.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.acegisecurity</groupId>
+			<artifactId>acegi-security</artifactId>
+			<version>${org.acegisecurity.version}</version>
 		</dependency>
 	</dependencies>
 

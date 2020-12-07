@@ -61,17 +61,17 @@ public class FileUtilsTest {
 	
 	@Test
 	public void test() throws IOException {
-		String fileName = "geode-wan-9.1.1.jar";
-		String groupId = "io.pivotal.gemfire";
-		String artifactId = "geode-wan";
-		String version = "9.1.1";
+		String fileName = "tapestry-spring-1.0.0.jar";
+		String groupId = "tapestry";
+		String artifactId = "tapestry-spring";
+		String version = "1.0.0";
 		String packaging = "jar";
 		
 		Map<String,String> hashMap = new HashMap<String,String>();
 		hashMap.put("-DgroupId", groupId);
 		hashMap.put("-DartifactId", artifactId);
 		hashMap.put("-Dversion", version);
-		hashMap.put("-Dfile", "D:\\download\\" + fileName);
+		hashMap.put("-Dfile", "F:\\jar\\" + fileName);
 		hashMap.put("-Dpackaging", packaging);
 		String result = FileUtil.getResult("test.txt",hashMap, "mvn deploy:deploy-file ");
 		System.out.println(result);
